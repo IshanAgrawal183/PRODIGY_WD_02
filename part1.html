@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="part2.css">
+</head>
+<body>
+    <div class="container">
+        <div id="roundClock">
+            <div class="clock-face">
+                <div class="hand hour-hand"></div>
+                <div class="hand minute-hand"></div>
+                <div class="hand second-hand"></div>
+            </div>
+        </div>
+        <div id="stopwatch">
+            <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span>
+        </div>
+        <div class="buttons">
+            <button id="startStop">Start</button>
+            <button id="lap">Lap</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="laps">
+            <h3>Laps</h3>
+            <ul id="lapsList"></ul>
+        </div>
+    </div>
+    <script src="Part3.js"></script>
+</body>
+</html>

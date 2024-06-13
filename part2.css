@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.container {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#roundClock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    border: 10px solid #ffffff;
+    border-radius: 50%;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hand {
+    position: absolute;
+    width: 50%;
+    height: 6px;
+    background: #ffffff;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s cubic-bezier(0.4, 2.3, 0.3, 1);
+}
+
+.hour-hand {
+    height: 8px;
+    background: #ffffff;
+}
+
+.minute-hand {
+    height: 6px;
+    background: #ffffff;
+}
+
+.second-hand {
+    height: 4px;
+    background: #f44336;
+}
+
+#stopwatch {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.buttons button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#startStop {
+    background-color: #4caf50;
+    color: white;
+}
+
+#lap {
+    background-color: #2196f3;
+    color: white;
+}
+
+#reset {
+    background-color: #f44336;
+    color: white;
+}
+
+.laps {
+    margin-top: 20px;
+}
+
+.laps ul {
+    list-style: none;
+    padding: 0;
+}
+
+.laps li {
+    background-color: #333333;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: #ffffff;
+}
